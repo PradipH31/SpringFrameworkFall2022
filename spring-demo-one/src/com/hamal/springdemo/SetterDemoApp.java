@@ -10,6 +10,11 @@ public class SetterDemoApp {
 		CricketCoach theCoach = context.getBean("myCricketCoach", CricketCoach.class);
 		System.out.println(theCoach.getDailyFortune());
 		System.out.println(theCoach.getDailyWorkout());
+		
+		// literal setter injection
+		System.out.println(theCoach.getEmailAddress());
+		System.out.println(theCoach.getTeam());
+		
 		context.close();
 
 	}
