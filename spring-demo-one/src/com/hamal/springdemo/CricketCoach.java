@@ -4,6 +4,26 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 
+	// literal injection
+	private String emailAddress;
+	private String team;
+
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
+	}
+
 	// create a no-arg constructor
 	public CricketCoach() {
 
